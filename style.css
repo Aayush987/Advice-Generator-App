@@ -10,7 +10,7 @@ body {
 
 #component {
     background-color: hsl(217, 19%, 24%);
-      width: 1440px; 
+    max-width: 1440px; 
     /*height: 150px; */
     padding: 60px 20px;
     margin-top: 220px;
@@ -37,7 +37,7 @@ body {
     font-weight: 800;
 }
 #image {
-    width: 30%;
+    width: 100%;
     position: relative;
     object-fit: contain;
     margin-left: auto;
@@ -62,4 +62,14 @@ body {
 
 #btn:hover {
     filter: drop-shadow(8px 8px 10px hsl(150, 100%, 66%));
+}
+
+
+@media screen and (max-width: 400px) {
+    #btn {
+        margin-left: 44%;
+    }
+    #image {
+            width: 100%;
+    }
 }
